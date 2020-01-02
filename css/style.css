@@ -1,0 +1,73 @@
+.bg{
+    background-image: url(./../images/manhattanhenge-black-white-l.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.bottom{
+    text-align: center;
+    color: black;
+    /* background-color:rgba(13, 96, 99, 0.733); */
+    height: 40px;
+    font-size: 13px;
+}
+.box-1{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif; 
+        transition: all 0.3s;
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+        @-webkit-keyframes slideInUp {
+        0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+        0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+  } 
+
+.box-1:hover{
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    
+}
+
+.fab{
+    float: right;
+    font-size: 22px;
+    color: black;
+    margin-right: 20px;
+    margin-top: 10px;
+    
+}
+
+@media (max-width: 900px){
+    .bg{
+        background-image: url(./../images/manhattanhenge-black-white-l.jpg);
+        background-size: 50%;
+        background-size: auto;
+        /* background-position: unset;
+        background-repeat: space;
+        /* background-color: teal;
+        background-image: none; */
+    } 
+}
